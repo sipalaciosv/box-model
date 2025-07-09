@@ -2,33 +2,104 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>One Piece Box Model</title>
+  <title>One Piece Box Model - Productos</title>
   <link rel="stylesheet" href="estilos.css">
+  <!-- Íconos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <!-- Menú fijo -->
   <header class="header">
-    <h1>¡Bienvenido a Grand Line!</h1>
+    <nav class="navbar">
+      <h1>Grand Line Shop</h1>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="container">
-    <h2>Tripulación Sombrero de Paja</h2>
-    <p>
-      Esta página usa el modelo de cajas de CSS para mostrar cómo organizar la aventura.  
-      Aquí puedes aprender sobre el layout y, de paso, unirte a la búsqueda del One Piece.
-    </p>
-    <div class="botones">
-      <button class="btn">¡Zarpamos!</button>
-      <button class="btn">Buscar el Tesoro</button>
-      <button class="btn">¡Quiero Ser Rey!</button>
-    </div>
+    <section id="productos" class="productos">
+      <h2>Nuestros Productos</h2>
+      <div class="productos-grid">
+        <div class="producto">
+          <img src="https://plushandbits.cl/wp-content/uploads/2022/04/gorro-modelo-real-luffy.png.webp" alt="Sombrero de Luffy">
+          <p>Sombrero de Paja de Luffy</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/urblanket_large_bedsquarex600.1u2.jpg" alt="Merry Xmas Zoro Blanket">
+          <p>One Piece Blankets – Merry Xmas Zoro Blanket</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/urblanket_large_bedsquarex600.1-12.jpg" alt="Zoro Anime Xmas Blanket">
+          <p>One Piece Blankets – Zoro Anime Xmas Blanket</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/I-wanna-drink-my-booze-Zoro-OP_Ugly-Christmas-Sweater-FRONT-mockup-800x800-1.jpg" alt="I Wanna Drink My Booze Zoro OP Ugly Christmas Sweater">
+          <p>I Wanna Drink My Booze Zoro OP Ugly Christmas Sweater</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/Anime-Roronoa-Zoro-One-Piece-The-King-Of-Hell-Hoodie.jpg" alt="Roronoa Zoro The King Of Hell Pullover Hoodie">
+          <p>One Piece Hoodies – Roronoa Zoro The King Of Hell Pullover Hoodie</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/09/ssrcoclassic_teemensfafafaca443f4786front_altsquare_product900x900-10.jpg" alt="Zoro One Piece Enjoying Halloween Classic T-Shirt">
+          <p>Zoro One Piece Enjoying Halloween Classic T-Shirt</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/09/ssrcoslim_fit_t_shirtmensfafafaca443f4786frontsquare_product900x900.u2-5.jpg" alt="Zoro Halloween Special Anime T-Shirt">
+          <p>Zoro Halloween Special Anime T-Shirt</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.store/wp-content/uploads/2024/09/kf-Sf584bb9b902c416d968e0f677994b9d68.jpg_640x640.jpg_.webp" alt="One Piece Figures – 31cm Roronoa Zoro Wano Arc Anime Action Figure">
+          <p>One Piece Figures – 31cm Roronoa Zoro Wano Arc Anime Action Figure</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.store/wp-content/uploads/2024/08/kf-Sb32834e789ca476895efeae8646f2ea1M.jpg_640x640.jpg_.webp" alt="One Piece Figures – Luffy Sanji Zoro Nami Chopper Egghead Action Figure">
+          <p>One Piece Figures – Luffy Sanji Zoro Nami Chopper Egghead Action Figure</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/08/One-Piece-Zoro-Egg-Head-Island-T-Shirt.jpg" alt="One Piece T-shirts – One Piece Zoro Egg Head Island T-Shirt">
+          <p>One Piece T-shirts – One Piece Zoro Egg Head Island T-Shirt</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/07/One-Piece-t-shirt-4.jpg" alt="One Piece T-shirts – Pirate Hunter Zoro Anime T-shirt">
+          <p>One Piece T-shirts – Pirate Hunter Zoro Anime T-shirt</p>
+        </div>
+        <div class="producto">
+          <img src="https://onepiece.store/wp-content/uploads/2024/07/kf-S43d9bd6485f548538d0a18c461432a8aG.jpg_640x640.jpg_.webp" alt="One Piece Swords – 80cm/31.5＂Anime Roronoa Zoro Wooden Katana Sword">
+          <p>One Piece Swords – 80cm/31.5＂Anime Roronoa Zoro Wooden Katana Sword</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <h2>Formulario de Contacto</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </section>
   </main>
 
   <footer class="footer">
-    <p>
-      “¡Me convertiré en el rey de los piratas!”<br>
-      — Monkey D. Luffy
-    </p>
+    <span>“No importa cuán difícil o imposible sea, nunca pierdas de vista tu objetivo: ¡encontrar el One Piece!”</span>
+    <div class="redes">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
   </footer>
 </body>
 </html>
