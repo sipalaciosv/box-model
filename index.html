@@ -3,103 +3,255 @@
 <head>
   <meta charset="UTF-8">
   <title>One Piece Box Model - Productos</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link rel="stylesheet" href="estilos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href = "bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
   <header class="header">
-    <nav class="navbar">
-      <h1>Grand Line Shop</h1>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid ">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#miNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class = "collapse navbar-collapse" id="miNav">
+            <ul class = "navbar-nav ms-auto">
+              <li class="nav-item"><a class= "nav-link" href="#">Inicio</a></li>
+              <li class="nav-item"><a class= "nav-link" href="#productos">Productos</a></li>
+              <li class="nav-item"><a class= "nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+          </div>
+      </nav>
+    
   </header>
 
-  <main class="container">
-    <section id="productos" class="productos">
+  <main >
+    <div id="carouselOnePiece" class="carousel slide mb-5" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselOnePiece" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Imagen 1"></button>
+    <button type="button" data-bs-target="#carouselOnePiece" data-bs-slide-to="1" aria-label="Imagen 2"></button>
+    <button type="button" data-bs-target="#carouselOnePiece" data-bs-slide-to="2" aria-label="Imagen 3"></button>
+  </div>
+  <div class="carousel-inner rounded" style="max-height: 350px;">
+    <div class="carousel-item active">
+      <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/08/One-Piece-Zoro-Egg-Head-Island-T-Shirt.jpg" class="d-block w-100" alt="Imagen 1 One Piece" style="height: 350px; object-fit: contain; background: #222;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://plushandbits.cl/wp-content/uploads/2022/04/gorro-modelo-real-luffy.png.webp" class="d-block w-100" alt="Imagen 2 One Piece" style="height: 350px; object-fit: contain; background: #222;">
+    </div>
+    <div class="carousel-item">
+      <img src="https://onepiece.store/wp-content/uploads/2024/09/kf-Sf584bb9b902c416d968e0f677994b9d68.jpg_640x640.jpg_.webp" class="d-block w-100" alt="Imagen 3 One Piece" style="height: 350px; object-fit: contain; background: #222;">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselOnePiece" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselOnePiece" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+    <section>
       <h2>Nuestros Productos</h2>
-      <div class="productos-grid">
-        <div class="producto">
-          <img src="https://plushandbits.cl/wp-content/uploads/2022/04/gorro-modelo-real-luffy.png.webp" alt="Sombrero de Luffy">
-          <p>Sombrero de Paja de Luffy</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/urblanket_large_bedsquarex600.1u2.jpg" alt="Merry Xmas Zoro Blanket">
-          <p>One Piece Blankets – Merry Xmas Zoro Blanket</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/urblanket_large_bedsquarex600.1-12.jpg" alt="Zoro Anime Xmas Blanket">
-          <p>One Piece Blankets – Zoro Anime Xmas Blanket</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/I-wanna-drink-my-booze-Zoro-OP_Ugly-Christmas-Sweater-FRONT-mockup-800x800-1.jpg" alt="I Wanna Drink My Booze Zoro OP Ugly Christmas Sweater">
-          <p>I Wanna Drink My Booze Zoro OP Ugly Christmas Sweater</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/Anime-Roronoa-Zoro-One-Piece-The-King-Of-Hell-Hoodie.jpg" alt="Roronoa Zoro The King Of Hell Pullover Hoodie">
-          <p>One Piece Hoodies – Roronoa Zoro The King Of Hell Pullover Hoodie</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/09/ssrcoclassic_teemensfafafaca443f4786front_altsquare_product900x900-10.jpg" alt="Zoro One Piece Enjoying Halloween Classic T-Shirt">
-          <p>Zoro One Piece Enjoying Halloween Classic T-Shirt</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/09/ssrcoslim_fit_t_shirtmensfafafaca443f4786frontsquare_product900x900.u2-5.jpg" alt="Zoro Halloween Special Anime T-Shirt">
-          <p>Zoro Halloween Special Anime T-Shirt</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.store/wp-content/uploads/2024/09/kf-Sf584bb9b902c416d968e0f677994b9d68.jpg_640x640.jpg_.webp" alt="One Piece Figures – 31cm Roronoa Zoro Wano Arc Anime Action Figure">
-          <p>One Piece Figures – 31cm Roronoa Zoro Wano Arc Anime Action Figure</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.store/wp-content/uploads/2024/08/kf-Sb32834e789ca476895efeae8646f2ea1M.jpg_640x640.jpg_.webp" alt="One Piece Figures – Luffy Sanji Zoro Nami Chopper Egghead Action Figure">
-          <p>One Piece Figures – Luffy Sanji Zoro Nami Chopper Egghead Action Figure</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/08/One-Piece-Zoro-Egg-Head-Island-T-Shirt.jpg" alt="One Piece T-shirts – One Piece Zoro Egg Head Island T-Shirt">
-          <p>One Piece T-shirts – One Piece Zoro Egg Head Island T-Shirt</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/07/One-Piece-t-shirt-4.jpg" alt="One Piece T-shirts – Pirate Hunter Zoro Anime T-shirt">
-          <p>One Piece T-shirts – Pirate Hunter Zoro Anime T-shirt</p>
-        </div>
-        <div class="producto">
-          <img src="https://onepiece.store/wp-content/uploads/2024/07/kf-S43d9bd6485f548538d0a18c461432a8aG.jpg_640x640.jpg_.webp" alt="One Piece Swords – 80cm/31.5＂Anime Roronoa Zoro Wooden Katana Sword">
-          <p>One Piece Swords – 80cm/31.5＂Anime Roronoa Zoro Wooden Katana Sword</p>
+      <div class="container my-4">
+  <div class="row g-4">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://plushandbits.cl/wp-content/uploads/2022/04/gorro-modelo-real-luffy.png.webp" class="card-img-top" alt="Sombrero de Luffy">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Sombrero de Paja de Luffy</h5>
+          <p class="card-text">Sombrero de Paja de Luffy</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
         </div>
       </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/urblanket_large_bedsquarex600.1u2.jpg" class="card-img-top" alt="Merry Xmas Zoro Blanket">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece Blankets – Merry Xmas Zoro Blanket</h5>
+          <p class="card-text">One Piece Blankets – Merry Xmas Zoro Blanket</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/urblanket_large_bedsquarex600.1-12.jpg" class="card-img-top" alt="Zoro Anime Xmas Blanket">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece Blankets – Zoro Anime Xmas Blanket</h5>
+          <p class="card-text">One Piece Blankets – Zoro Anime Xmas Blanket</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/I-wanna-drink-my-booze-Zoro-OP_Ugly-Christmas-Sweater-FRONT-mockup-800x800-1.jpg" class="card-img-top" alt="I Wanna Drink My Booze Zoro OP Ugly Christmas Sweater">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">I Wanna Drink My Booze Zoro OP Ugly Christmas Sweater</h5>
+          <p class="card-text">I Wanna Drink My Booze Zoro OP Ugly Christmas Sweater</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/10/Anime-Roronoa-Zoro-One-Piece-The-King-Of-Hell-Hoodie.jpg" class="card-img-top" alt="Roronoa Zoro The King Of Hell Pullover Hoodie">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece Hoodies – Roronoa Zoro The King Of Hell Pullover Hoodie</h5>
+          <p class="card-text">One Piece Hoodies – Roronoa Zoro The King Of Hell Pullover Hoodie</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/09/ssrcoclassic_teemensfafafaca443f4786front_altsquare_product900x900-10.jpg" class="card-img-top" alt="Zoro One Piece Enjoying Halloween Classic T-Shirt">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Zoro One Piece Enjoying Halloween Classic T-Shirt</h5>
+          <p class="card-text">Zoro One Piece Enjoying Halloween Classic T-Shirt</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/09/ssrcoslim_fit_t_shirtmensfafafaca443f4786frontsquare_product900x900.u2-5.jpg" class="card-img-top" alt="Zoro Halloween Special Anime T-Shirt">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">Zoro Halloween Special Anime T-Shirt</h5>
+          <p class="card-text">Zoro Halloween Special Anime T-Shirt</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.store/wp-content/uploads/2024/09/kf-Sf584bb9b902c416d968e0f677994b9d68.jpg_640x640.jpg_.webp" class="card-img-top" alt="One Piece Figures – 31cm Roronoa Zoro Wano Arc Anime Action Figure">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece Figures – 31cm Roronoa Zoro Wano Arc Anime Action Figure</h5>
+          <p class="card-text">One Piece Figures – 31cm Roronoa Zoro Wano Arc Anime Action Figure</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.store/wp-content/uploads/2024/08/kf-Sb32834e789ca476895efeae8646f2ea1M.jpg_640x640.jpg_.webp" class="card-img-top" alt="One Piece Figures – Luffy Sanji Zoro Nami Chopper Egghead Action Figure">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece Figures – Luffy Sanji Zoro Nami Chopper Egghead Action Figure</h5>
+          <p class="card-text">One Piece Figures – Luffy Sanji Zoro Nami Chopper Egghead Action Figure</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/08/One-Piece-Zoro-Egg-Head-Island-T-Shirt.jpg" class="card-img-top" alt="One Piece T-shirts – One Piece Zoro Egg Head Island T-Shirt">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece T-shirts – One Piece Zoro Egg Head Island T-Shirt</h5>
+          <p class="card-text">One Piece T-shirts – One Piece Zoro Egg Head Island T-Shirt</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.b-cdn.net/wp-content/uploads/2024/07/One-Piece-t-shirt-4.jpg" class="card-img-top" alt="One Piece T-shirts – Pirate Hunter Zoro Anime T-shirt">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece T-shirts – Pirate Hunter Zoro Anime T-shirt</h5>
+          <p class="card-text">One Piece T-shirts – Pirate Hunter Zoro Anime T-shirt</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="card h-100">
+        <img src="https://onepiece.store/wp-content/uploads/2024/07/kf-S43d9bd6485f548538d0a18c461432a8aG.jpg_640x640.jpg_.webp" class="card-img-top" alt="One Piece Swords – 80cm/31.5＂Anime Roronoa Zoro Wooden Katana Sword">
+        <div class="card-body d-flex flex-column">
+          <h5 class="card-title">One Piece Swords – 80cm/31.5＂Anime Roronoa Zoro Wooden Katana Sword</h5>
+          <p class="card-text">One Piece Swords – 80cm/31.5＂Anime Roronoa Zoro Wooden Katana Sword</p>
+          <a href="#" class="btn btn-primary mt-auto">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+
+
     </section>
 
-    <section id="contacto" class="contacto">
-      <h2>Formulario de Contacto</h2>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <section id="contacto" class="container my-5">
+  <h2 class="mb-4 text-center">Formulario de Contacto</h2>
+  <form class="mx-auto" style="max-width: 500px;">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" id="nombre" name="nombre" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="apellido" class="form-label">Apellido</label>
+      <input type="text" id="apellido" name="apellido" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label for="comentario" class="form-label">Comentario</label>
+      <textarea id="comentario" name="comentario" class="form-control" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Enviar</button>
+  </form>
+</section>
 
-        <label for="apellido">Apellido:</label>
-        <input type="text" id="apellido" name="apellido" required>
-
-        <label for="comentario">Comentario:</label>
-        <textarea id="comentario" name="comentario" required></textarea>
-
-        <button type="submit" class="btn">Enviar</button>
-      </form>
-    </section>
   </main>
 
-  <footer class="footer">
-    <span>“No importa cuán difícil o imposible sea, nunca pierdas de vista tu objetivo: ¡encontrar el One Piece!”</span>
-    <div class="redes">
-      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+  <footer class="footer bg-dark text-white py-4 mt-5">
+  <div class="container text-center">
+    <span class="d-block mb-2">
+      “No importa cuán difícil o imposible sea, nunca pierdas de vista tu objetivo: ¡encontrar el One Piece!”
+    </span>
+    <div class="d-flex justify-content-center gap-4 fs-3">
+      <a href="https://facebook.com" target="_blank" class="text-white">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://twitter.com" target="_blank" class="text-white">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-white">
+        <i class="fab fa-instagram"></i>
+      </a>
     </div>
-  </footer>
-  <scrip src="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></scrip>
+  </div>
+</footer>
+
+    <script src="bootstrap-5.3.7-dist/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <div class="modal fade" id="modalExito"  >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalExitoLabel">¡Éxito!</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+          </div>
+          <div class="modal-body">
+            Guardado exitosamente
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.querySelector("form").addEventListener("submit", function(e) {
+        e.preventDefault(); 
+        var modal = new bootstrap.Modal(document.getElementById('modalExito'));
+        modal.show();
+        this.reset();
+      });
+    </script>
+
 </body>
 </html>
