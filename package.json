@@ -1,0 +1,26 @@
+{
+  "name": "box-model",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sipalaciosv/box-model.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sipalaciosv/box-model/issues"
+  },
+  "homepage": "https://github.com/sipalaciosv/box-model#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.7"
+  }
+}

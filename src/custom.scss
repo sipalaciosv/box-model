@@ -1,0 +1,37 @@
+@import 'variables';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import 'mixins';
+
+.navbar {
+  background: $navbar-bg !important;
+  font-family: $font-main;
+  border-bottom: 2px solid $primary;
+}
+.navbar-brand {
+  color: $navbar-brand-color !important;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+.nav-link {
+  color: $navbar-nav-link-color !important;
+  font-weight: 500;
+  @include transition(.2s);
+  &:hover {
+    color: $navbar-nav-link-hover-color !important;
+    text-shadow: 0 0 6px $primary;
+  }
+}
+.card {
+  border-radius: 1rem;
+  @include card-shadow;
+}
+.btn-primary {
+  background: $primary;
+  border: none;
+  &:hover {
+    background: darken($primary, 10%);
+  }
+}
